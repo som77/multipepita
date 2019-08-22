@@ -3,7 +3,6 @@
 ## Más cosas que se le pueden preguntar
 
 Agregar al modelo de Pepita la capacidad de entender estos mensajes:
-- `estaDebil()`, Pepita _está débil_ si su energía no llega a 50 joules.
 - `estaFeliz()`, Pepita _está feliz_ si su energía está entre 500 y 1000 joules.
 - `cuantoQuiereVolar()`, que es el resultado de la siguiente cuenta. <br> 
   - De base, quiere volar (energía / 5) kilómetros, p.ej., si tiene 120 de energía, quiere volar 24 kilómetros. 
@@ -74,8 +73,8 @@ Debe ser posible poner o sacar salsa, y poner o sacar queso, enviándole mensaje
 ## Los deseos de Pepita
 
 Hacer que Pepita entienda el mensaje `haceLoQueQuieras()`. El comportamiento que tiene pepita al recibir ese mensaje depende de su estado de ánimo:
-- Si está débil, come alpiste.
+- Si está cansada, come alpiste.
 - Si está feliz, vuela 8 kms. 
-- Si Pepita no está ni débil ni feliz, entonces no hace nada.
+- Si Pepita no está ni cansada ni feliz, entonces no hace nada.
 
 
