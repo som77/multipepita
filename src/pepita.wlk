@@ -1,27 +1,33 @@
 object pepita {
-	var energia = 0
+	var energia = 100
 
-	method energia() {
-		return energia
+	method estaCansada() {
+		return energia < 50
 	}
 
-	method comer(comida) {
-		energia = energia + 4 * comida.peso()
-	}
-
-	method volar(kms) {
+	method vola(kms) {
 		energia -= 10 + kms
+	}
+
+	method come(comida) {
+		energia = energia + comida.energiaQueOtorga()
 	}
 }
 
-object manzana {
-	method peso() { 
-		return 250
+object alpiste {
+	var gramos = 10
+	
+	method energiaQueOtorga() { 
+		return 4 * gramos
+	}
+	
+	method gramos(nuevosGramos) {
+		gramos = nuevosGramos
 	}	
 }
 
-object fideos {
-	method peso() {
-		return 5000
-	}
+object manzana {
+	method energiaQueOtorga() { 
+		return 50
+	}	
 }
